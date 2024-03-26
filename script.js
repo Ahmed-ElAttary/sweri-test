@@ -39,7 +39,7 @@ L.easyButton({
       onClick: function () {
         att_map.locate({
           watch: true,
-          enableHighAccuracy: false,
+          enableHighAccuracy: true,
         });
       },
     },
@@ -96,18 +96,16 @@ att_map.on("locationfound", function (e) {
     }).addTo(att_map);
 
     if (mrkCurrentLocation) mrkCurrentLocation.remove();
-    if (distance > 5) {
-      console.log({ latlngs, distance, time: new Date().getTime() - lastTime });
-      mrkCurrentLocation = L.animatedMarker(routeLine.getLatLngs(), {
-        distance,
-        interval: new Date().getTime() - lastTime,
-        icon: carIcon,
-      }).addTo(att_map);
 
-      mrkCurrentLocation.start();
-    } else {
-      mrkCurrentLocation = L.marker(e.latlng, { icon: carIcon }).addTo(att_map);
-    }
+    console.log({ latlngs, distance, time: new Date().getTime() - lastTime });
+    mrkCurrentLocation = L.animatedMarker(routeLine.getLatLngs(), {
+      distance,
+      interval: new Date().getTime() - lastTime,
+      icon: carIcon,
+    }).addTo(att_map);
+
+    mrkCurrentLocation.start();
+
     lastTime = new Date().getTime();
   }
 });
