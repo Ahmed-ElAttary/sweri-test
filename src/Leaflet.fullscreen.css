@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <title>Draw & Edit</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script src="src/leaflet-src.js"></script>
+    <link rel="stylesheet" href="src/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="src/css/ionicons.min.css" />
+    <link rel="stylesheet" href="src/css/ionicons.css" />
+    <link rel="stylesheet" href="src/plugins/easy_button/easy-button.css" />
+    <link
+    rel="stylesheet"
+    href="src/plugins/fullscreen/Leaflet.fullscreen.css"
+  />
+    <script src="src/plugins/fullscreen/Leaflet.fullscreen.js"></script>
+
+
+    <script src="src/plugins/easy_button/easy-button.js"></script>
+    <script src="src/plugins/draw_plugin/Leaflet.draw.js"></script>
+    <script src="src/plugins/draw_plugin/Leaflet.Draw.Event.js"></script>
+    <link rel="stylesheet" href="src/plugins/draw_plugin/leaflet.draw.css"/>
+
+    <script src="src/plugins/draw_plugin/Toolbar.js"></script>
+    <script src="src/plugins/draw_plugin/Tooltip.js"></script>
+
+    <script src="src/plugins/draw_plugin/ext/GeometryUtil.js"></script>
+    <script src="src/plugins/draw_plugin/ext/LatLngUtil.js"></script>
+    <script src="src/plugins/draw_plugin/ext/LineUtil.Intersect.js"></script>
+    <script src="src/plugins/draw_plugin/ext/Polygon.Intersect.js"></script>
+    <script src="src/plugins/draw_plugin/ext/Polyline.Intersect.js"></script>
+    <script src="src/plugins/draw_plugin/ext/TouchEvents.js"></script>
+
+    <script src="src/plugins/draw_plugin/draw/DrawToolbar.js"></script>
+    <script src="src/plugins/draw_plugin/draw/handler/Draw.Feature.js"></script>
+    <script src="src/plugins/draw_plugin/draw/handler/Draw.SimpleShape.js"></script>
+    <script src="src/plugins/draw_plugin/draw/handler/Draw.Polyline.js"></script>
+    <script src="src/plugins/draw_plugin/draw/handler/Draw.Marker.js"></script>
+    <script src="src/plugins/draw_plugin/draw/handler/Draw.Circle.js"></script>
+    <script src="src/plugins/draw_plugin/draw/handler/Draw.CircleMarker.js"></script>
+    <script src="src/plugins/draw_plugin/draw/handler/Draw.Polygon.js"></script>
+    <script src="src/plugins/draw_plugin/draw/handler/Draw.Rectangle.js"></script>
+
+
+    <script src="src/plugins/draw_plugin/edit/EditToolbar.js"></script>
+    <script src="src/plugins/draw_plugin/edit/handler/EditToolbar.Edit.js"></script>
+    <script src="src/plugins/draw_plugin/edit/handler/EditToolbar.Delete.js"></script>
+
+    <script src="src/plugins/draw_plugin/Control.Draw.js"></script>
+
+    <script src="src/plugins/draw_plugin/edit/handler/Edit.Poly.js"></script>
+    <script src="src/plugins/draw_plugin/edit/handler/Edit.SimpleShape.js"></script>
+    <script src="src/plugins/draw_plugin/edit/handler/Edit.Rectangle.js"></script>
+    <script src="src/plugins/draw_plugin/edit/handler/Edit.Marker.js"></script>
+    <script src="src/plugins/draw_plugin/edit/handler/Edit.CircleMarker.js"></script>
+    <script src="src/plugins/draw_plugin/edit/handler/Edit.Circle.js"></script>
+
+    <link rel="manifest" href="manifest.json" />
+    
+</head>
+<body>
+<div id="map"></div>
+<script src="src/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyAJM8k3boOOqxRYYUc_YQsInQvBYe6OjFw",
+    authDomain: "elec-4fc26.firebaseapp.com",
+    databaseURL: "https://elec-4fc26-default-rtdb.firebaseio.com/",
+    projectId: "elec-4fc26",
+    storageBucket: "elec-4fc26.appspot.com",
+    messagingSenderId: "610720734496",
+    appId: "1:610720734496:web:9504d37f68f98d0e488b45"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="js/script.js" ></script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+#map {
+  height: 90vh;
+}
+body {
+  margin: 0px;
+}
+#types {
+  border-radius: 12px;
+  font-size: large;
+}
+#submit:enabled {
+  border-radius: 12px;
+  color: black;
+  background: goldenrod;
+  font-size: large;
+}
+
+#submit:disabled {
+  border-radius: 12px;
+  color: rgb(97, 93, 93);
+  background: rgb(184, 183, 183);
+  font-size: large;
+}
+
+.leaflet-touch .leaflet-bar button {
+  background-color: #000000c2;
+  color: goldenrod;
+}
+.leaflet-touch .leaflet-bar button:hover {
+  background-color: goldenrod;
+  color: #000000c2;
+}
+
+.leaflet-draw-draw-circlemarker,
+.leaflet-draw-draw-circle,
+.leaflet-draw-draw-rectangle,
+.leaflet-draw-draw-polygon,
+.leaflet-draw-draw-polyline {
+  display: none !important;
+}
+.mainIcon {
+  height: 60px;
+}
+.statusIcon {
+  width: 15px;
+  float: left;
+  position: absolute;
+  left: -3px;
+  bottom: -10px;
+}
+.badgeIcon {
+  width: 20px;
+  position: absolute;
+  right: -8px;
+  top: -5px;
+}
+.leaflet-touch .leaflet-control-layers,
+.leaflet-touch .leaflet-bar {
+  border: 0px;
+}
+.leaflet-legend.leaflet-bar.leaflet-control,
+.leaflet-control-layers.leaflet-control,
+leaflet-disabled {
+  background-color: #000000c2 !important;
+  color: rgb(217, 165, 32);
+}
+.leaflet-disabled {
+  display: none !important;
+}
+.leaflet-legend-title {
+  display: none;
+}
+.leaflet-legend-item span {
+  padding: 5px;
+  font-size: larger;
+}
+/* .leaflet-legend-contents {
+    display: block;
+  } */
+/***********************************************************(form)******************************************************/
+#closeBtn {
+  background-color: #000000c2;
+  color: goldenrod;
+  font-size: large;
+  font-weight: 900;
+  border-radius: 50%;
+  float: right;
+}
+#closeBtn:hover {
+  background-color: goldenrod;
+  color: #000000c2;
+}
+.form-group {
+  direction: rtl;
+}
+select:hover,
+input[type="text"]:hover {
+  background-color: #e4dac2;
+}
+
+#error_msg {
+  text-align: center;
+  font-size: large;
+  direction: rtl;
+}
+h2 {
+  text-align: center;
+}
+h4 {
+  color: #ffd984;
+}
+#sidebar {
+  background-color: #000000c2;
+  color: goldenrod;
+}
+label {
+  font-weight: bold;
+}
+.btn-warning {
+  background-color: goldenrod;
+  color: #000000c2;
+  font-size: large;
+  font-weight: 700;
+}
+.btn-warning:hover {
+  background-color: #000000c2;
+  color: goldenrod;
+  font-size: large;
+  font-weight: 700;
+}
+/***********************************************************(Buttons & icons)******************************************************/
+.ion-arrow-expand,
+.ion-search,
+.ion-refresh,
+.ion-qr-scanner,
+.ion-android-close,
+.ion-android-locate {
+  font-size: x-large;
+}
+
+.leaflet-bar button,
+.leaflet-bar a,
+.leaflet-control-layers-toggle,
+.leaflet-control-layers-expanded {
+  background-color: #000000c2;
+  color: goldenrod;
+}
+.leaflet-bar button:hover,
+.leaflet-bar a:hover,
+.leaflet-control-layers-toggle:hover {
+  background-color: goldenrod;
+  color: #000000c2;
+}
+/***********************************************************(tooltip)******************************************************/
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip,
+.leaflet-popup-content {
+  background: #000000de;
+  direction: rtl;
+  text-align: right;
+  font-size: 15px;
+  font-weight: 700;
+  /* white-space: nowrap; */
+  line-height: 15px;
+  color: #ffd984;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+}
+#enName {
+  text-align: left;
+}
+/***********************************************************(cluster & marker)******************************************************/
+
+.marker-cluster div {
+  background-color: #000000dc;
+  color: goldenrod;
+}
+.marker-cluster {
+  background-color: rgba(218, 165, 32, 0.555);
+}
+
+/***********************************************************(layers control)******************************************************/
+/**********(radio)************/
+input[type="radio"] {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid darkgray;
+  border-radius: 50%;
+  outline: none;
+  box-shadow: 0 0 5px 0px gray inset;
+}
+input[type="radio"]:hover {
+  box-shadow: 0 0 5px 0px orange inset;
+}
+input[type="radio"]:before {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 60%;
+  margin: 20% auto;
+  border-radius: 50%;
+}
+input[type="radio"]:checked:before {
+  background: goldenrod;
+}
+/**********(checkbox)************/
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid darkgray;
+
+  outline: none;
+  box-shadow: 0 0 5px 0px gray inset;
+}
+input[type="checkbox"]:hover {
+  box-shadow: 0 0 5px 0px orange inset;
+}
+input[type="checkbox"]:before {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 60%;
+  margin: 20% auto;
+}
+input[type="checkbox"]:checked:before {
+  background: goldenrod;
+}
+
+/***********************************************************(scrollbar)******************************************************/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px goldenrod;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: goldenrod;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(126, 92, 8);
+}
+/***********************************************************()******************************************************/
+
+.autocomplete-items {
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+  color: black;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
