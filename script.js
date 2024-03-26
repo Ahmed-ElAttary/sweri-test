@@ -39,7 +39,7 @@ L.easyButton({
       onClick: function () {
         att_map.locate({
           watch: true,
-          enableHighAccuracy: true,
+          enableHighAccuracy: false,
         });
       },
     },
